@@ -1,10 +1,12 @@
 nav {
   position: relative;
+  width: 100% !important;
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   padding: 2rem 3rem;
   align-items: center;
   justify-items: center;
+  transition: all 0.3s ease;
 }
 
 nav a {
@@ -19,12 +21,41 @@ nav img {
   top: 25px;
   left: 50%;
   transform: translateX(-50%);
+  transition: width 1s ease;
 }
 
 nav button {
   background: none;
+  cursor: pointer;
+  color: #333;
   border: 1px solid #333;
-
+  width: 80%;
   padding: 0.5rem 1rem;
   border-radius: 5px;
+}
+
+/* Scrolling Animation */
+
+nav.scrolled img {
+  width: 3rem;
+  position: relative;
+  top: 0;
+}
+
+nav.scrolled {
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+  padding: 1rem 2rem;
+  position: fixed;
+  backdrop-filter: blur(8px);
+}
+
+@keyframes navbarScroll {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
 }
