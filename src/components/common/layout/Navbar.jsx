@@ -23,7 +23,7 @@ const Navbar = () => {
       <a href="/services">Our Services</a>
       <div>
         <a href="/services">
-          <img src="/assets/images/us-logo.svg" alt="logo" />
+          <img src="assets/images/us-logo.svg" alt="logo" />
         </a>
       </div>
       <a href="/contact">Contact Us</a>
