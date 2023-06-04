@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600&display=swap");
+
 nav {
   position: relative;
   width: 100% !important;
@@ -48,7 +50,8 @@ nav.scrolled {
   z-index: 100;
   padding: 1rem 2rem;
   position: fixed;
-  backdrop-filter: blur(8px);
+  backdrop-filter: blur(3px) contrast(60%);
+  -webkit-backdrop-filter: blur(2px) contrast(60%);
 }
 
 @keyframes navbarScroll {
@@ -58,4 +61,34 @@ nav.scrolled {
   100% {
     transform: translateY(-100%);
   }
+}
+
+footer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  font-family: "Poppins", sans-serif;
+  margin: 4rem 0;
+}
+
+footer div > h3 {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer ul > li {
+  line-height: 2;
+}
+
+footer div:nth-child(5) {
+  width: 100%;
+  text-align: center;
+  grid-column: span 4;
+  margin-top: 2rem;
 }

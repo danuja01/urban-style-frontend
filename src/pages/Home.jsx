@@ -1,7 +1,8 @@
 import Header from "../components/Home/Header";
-import Services from "../components/Home/Services";
+import Testimonial from "../components/Home/Testimonial";
 import Seperator from "../components/common/Seperator";
-import Navbar from "../components/layout/Navbar";
+import Footer from "../components/common/layout/Footer";
+import Navbar from "../components/common/layout/Navbar";
 
 const Home = () => {
   return (
@@ -9,7 +10,15 @@ const Home = () => {
       <Navbar />
       <Header />
       <Seperator />
-      <Services />
+      <section style={{ height: "70vh" }}>
+        <div className="services">
+          <h1>Our Services</h1>
+        </div>
+      </section>
+      <Seperator />
+      <Testimonial />
+      <Seperator />
+      <Footer />
     </>
   );
 };

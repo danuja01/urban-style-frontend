@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600&display=swap");
+
 .header {
   margin: 0 5px;
   display: grid;
@@ -38,3 +40,83 @@
     margin-top: 0;
   }
 }
+
+.testimonial {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 4rem;
+  max-height: fit-content;
+}
+
+.testimonial div:nth-child(1) {
+  position: relative;
+  padding: 0 2rem;
+  margin: 4rem;
+}
+
+.testimonial div:nth-child(1) p {
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 0.5rem;
+}
+
+.testimonial h2 {
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.testimonial div:nth-child(2) {
+  justify-self: center;
+}
+
+.testimonial div:nth-child(2) > div {
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  margin-top: 4rem;
+  height: 40vh;
+  padding: 2rem 2rem;
+  position: relative;
+}
+
+.testimonial div:nth-child(2) > div p {
+  height: 25vh;
+  font-family: "Poppins", sans-serif;
+}
+
+.testimonial div:nth-child(2) > div h3 {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.testimonial div:nth-child(2) img {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  top: -25px;
+  left: -25px;
+}
+
+/* THREE DOT PAGINATION */
+
+.testimonial-pagination {
+  margin-top: 2.5rem;
+}
+
+.dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: #000;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+
+.backward {
+  opacity: 0.5;
+}
+
+/* END THREE DOT PAGINATION */
